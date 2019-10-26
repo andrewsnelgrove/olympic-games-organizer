@@ -1,26 +1,30 @@
 public class Athlete
 {
+ import java.util.ArrayList;
+  
 //Fields
   private String firstName;
   private String lastName;
   private int registrationNum;
-  //private String DOB 
+  private String dateOfBirth;
 
-  private String countryRep;
-  private String sportType;
-  private String awards;
+  private String country;
+  private String sport;
+  private ArrayList<String> awards;
 
   private MedicalHistory medicalHistory;
   private EmergencyContact emergencyContact;
 
   //Constructor
-  public Athlete()
+  public Athlete(String firstName = "", String lastName = "", String dateOfBirth = "", \
+                 int registrationNum = -1, String country = "", String sport = "", \
+                  ArrayList<String> awards = ArrayList<>() )
   {
-    firstName = "";
-    lastName = "";
-    registrationNum = "";
-    countryRep = "";
-    sportType = "";
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.registrationNum = registrationNum;
+    this.country = country;
+    this.sport = sport;
 
     medicalHistory = new MedicalHistory();
     emergencyContact = new EmergencyContact();
