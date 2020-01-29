@@ -1,0 +1,6 @@
+class EmergencyContact
+{
+//Fields
+
+
+}
